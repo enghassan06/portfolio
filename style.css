@@ -360,7 +360,7 @@ section .projects {
 }
 section .projects .text h1 {
   font-size: 50px;
-  margin: 20px 0 10px;
+  margin: 20px 0 20px;
   text-align: center;
   color: var(--text-color);
   /* الحالة البدائية: فوق ومخفي */
@@ -386,7 +386,7 @@ section .projects .text h1 {
   }
 }
 section .projects .text p {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: var(--wh-color);
   margin-bottom: 30px;
