@@ -340,7 +340,6 @@ section .header .content h1 {
   font-size: 50px;
   color: var(--text-color);
   margin: 20px 10px;
-  text-transform: capitalize;
 }
 section .header .content p {
   font-size: 20px;
@@ -374,6 +373,7 @@ section .projects .text h1 {
   /* التأخير: مش هيبدأ غير لما سكشن المشاريع يدخل الشاشة بنسبة 40% */
   /* زودنا الرقم شوية عشان ده سكشن جديد وعايزينه يتأخر */
   animation-range: entry 40% contain 60%;
+  text-transform: capitalize;
 }
 /* الأنميشن الخاص بالعناوين */
 @keyframes slideFromTop {
