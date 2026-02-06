@@ -22,7 +22,7 @@
     align-items: center;
     height: 100%;
     left: auto !important;
-    right: 8% !important;
+    right: 0% !important;
     background-color: black;
     overflow: hidden;
     transition: 0.5s;
@@ -51,10 +51,14 @@
     height: 1px;
     background-color: var(--text-color);
   }
+  header button {
+    position: absolute;
+    left: -10px;
+  }
   header .fa-solid {
     display: block;
     position: fixed;
-    left: 82%;
+    left: 86%;
     top: 30px;
     z-index: 1000000;
   }
