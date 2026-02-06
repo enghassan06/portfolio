@@ -503,3 +503,13 @@ section .projects .container-cards .card p {
 section .projects .container-cards .card p span {
   font-weight: 600;
 }
+header nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+header .fa-solid {
+  color: var(--text-color);
+  font-size: 35px;
+  display: none;
+}

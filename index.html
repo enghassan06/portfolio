@@ -8,11 +8,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
     <title>portfolio website</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navclose" class="navclose">
         <a href="#" class="logo">CodeScale</a>
         <ul>
           <li class="active"><a href="#">home</a></li>
@@ -26,6 +27,9 @@
           <a href="https://wa.me/+201013329556" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </nav>
+      <button id="opnbtn">
+        <i class="fa-solid fa-bars"></i>
+        </button>
       <div class="section" id="home">
         <div class="content">
           <h4>Hello everyone</h4>
@@ -238,5 +242,6 @@
           </div>
         </div>
       </section>
+      <script src="main.js"></script>
     </body>
 </html>
