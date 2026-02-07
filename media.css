@@ -171,8 +171,7 @@
     flex-direction: column;
     gap: 0;
   }
-  section .header .content,
-  section .header .img {
+  section .header .content {
     width: 100%;
     text-align: center;
     padding: 0;
