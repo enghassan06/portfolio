@@ -179,7 +179,7 @@
   section .header .img {
     animation-range: entry 30% contain 31%;
     justify-content: flex-start;
-    margin-left: 160px;
+    margin-left: 210px;
   }
   section .header .content h1 {
     font-size: 40px;
