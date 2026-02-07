@@ -35,6 +35,7 @@
     overflow: hidden;
     transition: 0.5s;
     padding: 0;
+    height: 100%;
   }
   header,
   header .section {
@@ -159,8 +160,7 @@
     width: 170px;
     margin: 20px auto;
   }
-  section {
-  }
+
   section .header {
     width: 100%;
     margin-top: 30px;
@@ -180,5 +180,11 @@
   section .header .content h1 {
     font-size: 30px;
     margin-bottom: 10px;
+  }
+  section .header .content p {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
   }
 }
