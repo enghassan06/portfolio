@@ -29,13 +29,17 @@
     flex-direction: column;
     width: 300px;
     align-items: center;
-    height: 100%;
     left: auto !important;
     right: 0% !important;
     background-color: black;
     overflow: hidden;
     transition: 0.5s;
     padding: 0;
+  }
+  header,
+  header .section {
+    height: auto !important; /* خليه يفرش بطوله الطبيعي */
+    overflow: visible !important; /* يمنع السكرول الداخلي تماماً */
   }
   header nav > a {
     display: none;
@@ -60,16 +64,28 @@
     height: 1px;
     background-color: var(--text-color);
   }
-  header button {
-    position: absolute;
-    left: -20px;
-  }
-  header .fa-solid {
-    display: block;
+  button {
     position: fixed;
-    left: 93%;
+    display: block;
+    left: -20px;
+    /* بنلغي أي left قديم وبنثبت الـ right بالبكسل */
+    left: auto !important;
+    right: 20px !important; /* مسافة ثابتة وشيك من حافة اليمين */
     top: 30px;
     z-index: 1000000;
+    transform: translateZ(0) !important;
+
+    /* شوية رتوش عشان الزرار يبقى واضح */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* الأيقونة اللي جوه الزرار */
+  .fa-solid {
+    display: inline-block; /* مش block ولا fixed */
+    font-size: 30px; /* كبّر الأيقونة براحتك هنا */
+    position: static; /* رجعها لوضعها الطبيعي جوه الزرار */
   }
   header nav ul li:hover a::before,
   header nav ul li:hover a {
@@ -144,11 +160,25 @@
     margin: 20px auto;
   }
   section {
-    background-color: red;
   }
   section .header {
-    background-color: green;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 30px;
+    contain: layout;
+    flex-direction: column;
+    gap: 0;
+  }
+  section .header .content,
+  section .header .img {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  section .header .img {
+    animation-range: entry 30% contain 32%;
+  }
+  section .header .content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
   }
 }

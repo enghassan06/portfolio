@@ -38,7 +38,7 @@ header nav {
   opacity: 0;
   animation: opacity 1s linear forwards;
   animation-delay: 0.4s;
-  z-index: 100000;
+  z-index: 100;
   background-color: var(--bg-color);
 }
 @keyframes opacity {
@@ -294,7 +294,7 @@ section .header {
 /* 1. سكشن الكلام (يدخل من الشمال) */
 section .header .content {
   width: 50%;
-  height: 24\0;
+  height: 240px;
   padding: 0 0 0 60px;
   opacity: 0;
   transform: translate(-100px, -40px); /* البداية من الشمال */
@@ -503,12 +503,13 @@ section .projects .container-cards .card p {
 section .projects .container-cards .card p span {
   font-weight: 600;
 }
-header nav button {
+button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 9999;
 }
-header .fa-solid {
+.fa-solid {
   color: var(--text-color);
   font-size: 35px;
   display: none;
