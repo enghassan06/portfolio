@@ -347,7 +347,6 @@ section .header .content p {
   color: var(--wh-color);
 }
 section .header .img img {
-  /* visibility: hidden; */
   height: 100%;
   width: 70%;
 }

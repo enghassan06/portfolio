@@ -166,7 +166,7 @@
 
   section .header {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 15px;
     contain: layout;
     flex-direction: column;
     gap: 0;
@@ -174,20 +174,212 @@
   section .header .content,
   section .header .img {
     width: 100%;
-    height: 50%;
     text-align: center;
+    padding: 0;
   }
   section .header .img {
-    animation-range: entry 30% contain 32%;
+    animation-range: entry 30% contain 31%;
+    justify-content: flex-start;
+    margin-left: 160px;
   }
   section .header .content h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin: 10px 0 15px;
   }
   section .header .content p {
     font-size: 20px;
-    width: 90%;
+    width: 85%;
     margin: auto;
     text-align: justify;
+  }
+}
+@media (max-width: 500px) {
+  header .section .container-photo .img-container {
+    width: 220px;
+    height: 220px;
+  }
+  header .section .container-photo .img-container .img {
+    width: 220px;
+    height: 220px;
+  }
+  header .section .container-photo .img-container::before,
+  header .section .container-photo .img-container::after {
+    width: 220px;
+    height: 220px;
+  }
+  header .section .content {
+    padding: 0 30px;
+  }
+  header .section .content h4 {
+    font-size: 28px;
+  }
+  header .section .content h1 {
+    font-size: 33px;
+  }
+  header .section .content h2 {
+    font-size: 19px;
+  }
+  @keyframes width {
+    0%,
+    10% {
+      width: 0%;
+    }
+    90%,
+    100% {
+      width: 380px;
+    }
+  }
+  header .section .content p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  section .header {
+    margin-top: 15px;
+  }
+  section .header .content {
+    padding: 0;
+  }
+  section .header .content p {
+    font-size: 19px;
+  }
+  section .header .img {
+    margin: 40px 0 0 130px;
+  }
+  section .projects {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 400px) {
+  header .section .container-photo .img-container {
+    width: 190px;
+    height: 190px;
+  }
+  header .section .container-photo .img-container .img {
+    width: 190px;
+    height: 190px;
+  }
+  header .section .container-photo .img-container::before,
+  header .section .container-photo .img-container::after {
+    width: 190px;
+    height: 190px;
+  }
+  header .section {
+    margin-left: 34px;
+  }
+  header .section .content {
+    padding: 0 10px;
+  }
+  @keyframes width {
+    0%,
+    10% {
+      width: 0%;
+    }
+    90%,
+    100% {
+      width: 347px;
+    }
+  }
+  section .header {
+    width: 100% !important;
+  }
+  header .section .content h1 {
+    font-size: 30px;
+  }
+  section .header .content h1 {
+    margin: 10px 0 15px 72px;
+  }
+  section .header .content p {
+    margin-left: 50px;
+    width: 96%;
+  }
+  section .header .img {
+    margin: 20px 0 0 50px;
+  }
+  section .header .img img {
+    width: 99%;
+  }
+  section .projects {
+    margin-top: 70px;
+  }
+  section .projects .text {
+    margin-left: 50px;
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  header .section .container-photo .img-container {
+    width: 250px;
+    height: 250px;
+  }
+  header .section .container-photo .img-container .img {
+    width: 250px;
+    height: 250px;
+  }
+  header .section .container-photo .img-container::before,
+  header .section .container-photo .img-container::after {
+    width: 250px;
+    height: 190px;
+  }
+  header .section {
+    margin-left: 34px;
+  }
+  header .section .content {
+    padding: 0 10px;
+  }
+  @keyframes width {
+    0%,
+    10% {
+      width: 0%;
+    }
+    90%,
+    100% {
+      width: 347px;
+    }
+  }
+  section .header {
+    width: 100% !important;
+  }
+  header .section .content h1 {
+    font-size: 30px;
+    width: 321px;
+  }
+  header .section .content p {
+    width: 330px;
+  }
+  header .section .content a {
+    margin-left: 75px;
+  }
+  section .header .content h1 {
+    width: 100%;
+    margin: 10px 0 15px 50px;
+  }
+  section .header .content p {
+    margin-left: 50px;
+    width: 320px;
+  }
+  section .header .img img {
+    width: 460px;
+  }
+  section .projects {
+    margin-top: 70px;
+  }
+  section .projects .text {
+    margin-left: 50px;
+    width: 90%;
+  }
+  section .projects .text h1 {
+    width: 100%;
+    margin-left: 15px;
+  }
+  section .projects .text p {
+    width: 100%;
+    font-size: 22px;
+  }
+  section .projects .container-cards {
+    justify-content: flex-start;
+  }
+  section .projects .container-cards .card {
+    margin: 29px auto;
+    width: 340px;
   }
 }
