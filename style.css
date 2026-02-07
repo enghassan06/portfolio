@@ -294,7 +294,7 @@ section .header {
 /* 1. سكشن الكلام (يدخل من الشمال) */
 section .header .content {
   width: 50%;
-  height: 24\0px;
+  height: 24\0;
   padding: 0 0 0 60px;
   opacity: 0;
   transform: translate(-100px, -40px); /* البداية من الشمال */
