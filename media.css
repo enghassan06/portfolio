@@ -241,6 +241,7 @@
   section .header .content p {
     font-size: 19px;
     margin-bottom: 0;
+    margin-left: 20px;
   }
   section .header .img {
     margin: 40px 0 0 130px;
@@ -297,7 +298,7 @@
     font-size: 30px;
   }
   section .header .content h1 {
-    margin: 10px 0 15px 72px;
+    margin: 10px 0 15px 45px;
   }
   section .header .content p {
     margin-left: 20px;
