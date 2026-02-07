@@ -142,6 +142,9 @@
     font-size: 28px;
     margin: auto;
   }
+  header .section .content p {
+    text-align: justify;
+  }
   @keyframes width {
     0%,
     10% {
