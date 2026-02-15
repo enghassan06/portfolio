@@ -191,6 +191,21 @@
     text-align: justify;
     margin-bottom: 25px;
   }
+  section .my-skills {
+    margin-top: 50px;
+  }
+  section .my-skills .header-skills {
+    text-align: center;
+    margin: auto;
+  }
+  section .my-skills .skills-section {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  section .my-skills .header-skills h1 {
+    font-size: 45px;
+  }
 }
 @media (max-width: 500px) {
   header .section .container-photo .img-container {
@@ -247,6 +262,22 @@
     margin: 40px 0 0 130px;
     width: 500px;
     margin-left: 110px;
+  }
+  section .my-skills {
+    margin: 80px 0 220px;
+  }
+  section .my-skills .header-skills {
+    text-align: center;
+    margin: auto;
+  }
+  section .my-skills .skills-section {
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+  }
+  section .my-skills .header-skills h1 {
+    font-size: 45px;
   }
   section .projects {
     margin-top: 90px;
@@ -311,6 +342,7 @@
   section .header .img img {
     width: 99%;
   }
+
   section .projects {
     margin-top: 70px;
   }

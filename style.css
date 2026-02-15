@@ -60,7 +60,14 @@ header nav > a {
   animation: backround 10s ease-in-out infinite alternate;
   z-index: 100;
 }
-
+@keyframes backround {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
 header nav ul {
   display: flex;
 }
@@ -290,6 +297,7 @@ section .header {
   margin: auto;
   height: 400px;
   align-items: center;
+  padding-top: 80px;
 }
 /* 1. سكشن الكلام (يدخل من الشمال) */
 section .header .content {
@@ -350,12 +358,131 @@ section .header .img img {
   height: 100%;
   width: 70%;
 }
+section .my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  padding-top: 80px;
+  contain: layout;
+}
+section .my-skills .header-skills {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 0;
+}
+section .my-skills .header-skills h1 {
+  color: var(--text-color);
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  transform: translate(200px, -80px);
+  opacity: 0;
+  animation: positionOpacity linear forwards;
+  animation-timeline: view();
+  animation-range: entry 30% cover 40%;
+}
+@keyframes positionOpacity {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+section .my-skills .header-skills p {
+  color: var(--wh-color);
+  font-size: 25px;
+  font-weight: 700;
+  transform: translate(-200px, -10px);
+  opacity: 0;
+  animation: positionOpacity linear forwards;
+  animation-timeline: view();
+  animation-range: entry 50% cover 60%;
+}
+section .my-skills .skills-section {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+  transform: translate(-200px, -80px);
+  opacity: 0;
+  animation: positionOpacity linear forwards;
+  animation-timeline: view();
+  animation-range: entry 30% cover 40%;
+  flex-wrap: wrap;
+}
+section .my-skills .skills-section .skill {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+section .my-skills .skills-section .skill i {
+  color: var(--text-color);
+  font-size: 50px;
+  position: relative;
+  margin-bottom: 10px;
+  animation: float 3s ease-in-out infinite;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px); /* المكان الأصلي */
+  }
+  50% {
+    transform: translateY(-15px); /* يطلع لفوق */
+  }
+  100% {
+    transform: translateY(0px); /* يرجع لمكانه */
+  }
+}
+section .my-skills .skills-section .skill i::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: radial-gradient(circle, var(--text-color), transparent 70%);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  filter: blur(10px);
+  opacity: 0.6;
+  animation: shadowPulse 3s ease-in-out infinite;
+}
+@keyframes shadowPulse {
+  0% {
+    transform: translateX(-50%) scale(1); /* حجم البقعة الطبيعي */
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(-50%) scale(0.8); /* البقعة تصغر وتضعف لما الكارت يبعد */
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.6;
+  }
+}
+section .my-skills .skills-section .skill p {
+  color: var(--wh-color);
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+}
 section .projects {
   background-color: var(--bg-color);
   width: 100%;
   margin: 70px auto;
   height: auto;
-  padding: 20px 0px;
+  padding-top: 80px;
 }
 section .projects .text h1 {
   font-size: 50px;
